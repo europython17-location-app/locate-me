@@ -7,5 +7,5 @@ class User(models.Model):
     uuid = models.UUIDField(primary_key=True)
 
 class UserLocation(gis_model.Model):
-    user = models.ForeignObject(to=User, on_delete=None, from_fields=[])
+    user = models.ForeignKey(to=User, on_delete=models.CASCADE)
     coords = gis_model.PointField()
