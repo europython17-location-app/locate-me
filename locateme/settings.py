@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.gis',
-    'locator',
 ]
 
 MIDDLEWARE = [
@@ -80,7 +79,7 @@ DATABASES = {
          'ENGINE': 'django.contrib.gis.db.backends.postgis',
          'NAME': 'geodb',
          'USER': 'postgres',
-         'HOST': 'db',
+         'HOST': 'localhost',
          'PASSWORD': 'mysecretpassword',
     },
 }
